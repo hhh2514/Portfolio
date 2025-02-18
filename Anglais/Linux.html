@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Server Configuration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            color: #007BFF;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap; /* Pour permettre de placer les images sur plusieurs lignes si nécessaire */
+        }
+
+        .images img {
+            max-width: 100%; /* S'adapte à la taille de l'écran */
+            height: auto;
+            border-radius: 8px; /* Coins arrondis */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1 1 300px; /* Aide à garder la taille d'image cohérente */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <p><a href="../Portfolio%20EN.html" class="back-link">&larr; Return</a></p>
+
+<header>
+    <h1>Linux Server Configuration</h1>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>1. Configuration via l’iDRAC</h2>
+        <p>I was able to configure the server remotely using iDRAC, which allowed me to manage the hardware without being physically present.</p>
+        <div class="images">
+            <img src="../assets/img/IDRAC.png" alt="Configuration iDRAC">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Aggregation Configuration</h2>
+        <p>The next step involved configuring network interface aggregation to ensure better connection and redundancy.</p>
+        <div class="images">
+            <img src="../assets/img/Agregation.png" alt="Configuration de l'agrégation">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Opening a Port in the DNS</h2>
+        <p>I also opened a port in the DNS to allow access to the services hosted on the server.</p>
+        <div class="images">
+            <img src="../assets/img/DNS.png" alt="Configuration DNS">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Transfer of VMs</h2>
+        <p>Finally, this server will transfer all the VMs, thereby centralizing the management of virtual machines.</p>
+        <div class="images">
+            <img src="../assets/img/VM transfert.jpg" alt="Transfert de VMs">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>2025 </p>
+</footer>
+
+</body>
+
+</html>

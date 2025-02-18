@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT asset management tools</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+        }
+
+        .text-content {
+            text-align: center;
+            color: #444;
+            margin: 15px 0;
+            font-size: clamp(1rem, 3vw, 1.2rem);
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            list-style-type: none;
+        }
+
+        li {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-left: 5px solid #007BFF;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Styles spécifiques pour les images */
+        img {
+            max-width: 250px;
+            max-height: 250px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styles pour le modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../Portfolio EN.html" class="back-button">Retour </a> <!-- Remplacez par le lien souhaité -->
+        </header>
+        <h1>IT asset management tools</h1>
+        
+
+        <p class="text-content">
+            An IT asset management tool is software designed to help businesses monitor, manage, and optimize their IT infrastructure.
+        </p>
+
+        <p class="text-content">List of various IT asset management tools:</p>
+
+        <ul>
+            <li>
+                <span>Database Management System (DBMS)</span>
+                <img src="../assets/img/Coeur.png" alt="SGBD" onclick="openModal(this.src)">
+            </li>
+            <li>
+                <span> IT Service Management (ITSM)</span>
+                <img src="../assets/img/Lutin.jpg" alt="ITSM" onclick="openModal(this.src)">
+            </li>
+            <li>
+                <span>IT Asset Management (ITAM) software</span>
+                <img src="../assets/img/Arr.png" alt="ITAM" onclick="openModal(this.src)">
+            </li>
+            <li>
+                <span>Configuration Management Database (CMDB) software</span>
+                <img src="../assets/img/Malicieux.jpg" alt="CMDB" onclick="openModal(this.src)">
+            </li>
+            <li>
+                <span>IT management software example</span>
+                <img src="../assets/img/Glpi.png" alt="Exemple Parc" onclick="openModal(this.src)">
+            </li>
+        </ul>
+    </div>
+
+    <!-- Modal avec corrections -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            // Préchargement de l'image pour éviter le flou
+            const img = new Image();
+            img.onload = function() {
+                modalImg.src = src;
+                modal.style.display = 'flex';
+            };
+            img.onerror = function() {
+                console.error('Erreur de chargement de l\'image');
+            };
+            img.src = src;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+
+        // Fermeture du modal avec la touche Échap
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
