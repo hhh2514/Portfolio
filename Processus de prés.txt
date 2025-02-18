@@ -1,0 +1,20 @@
+	
+	Présentation:
+
+Intro -> 1min
+ -> Qui Suis-Je
+Votre parcours ->2 min
+	-> Du Débuts à la Fin
+Vos compétences -> 2 min
+	->Quesque j'ai appris en entreprise
+Vos projets (Stages/alternance) ->2 min
+	-> Projets et initiative 
+Votre Veille-> 2 min
+	-> Veille Techno
+Point N+1/N+2 -> 1min 
+	-> Suite de nos projet d'avenir
+	
+Questions/Réponses
+	-Developpez vos missions
+	-Expliquez le "code" du portfolio
+	-Mission:SISR,Ticketing,Priorisation,Incident,équipe,...

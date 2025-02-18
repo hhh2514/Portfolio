@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration Serveur Linux</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            color: #007BFF;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap; /* Pour permettre de placer les images sur plusieurs lignes si nécessaire */
+        }
+
+        .images img {
+            max-width: 100%; /* S'adapte à la taille de l'écran */
+            height: auto;
+            border-radius: 8px; /* Coins arrondis */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1 1 300px; /* Aide à garder la taille d'image cohérente */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <p><a href="../Portfolio%20FR.html" class="back-link">&larr; Retour</a></p>
+
+<header>
+    <h1>Configuration de Serveur Linux</h1>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>1. Configuration via l’iDRAC</h2>
+        <p>J'ai pu configurer le serveur à distance grâce à l'IDRAC, ce qui m'a permis de gérer le matériel sans avoir à être physiquement présent.</p>
+        <div class="images">
+            <img src="../assets/img/IDRAC.png" alt="Configuration iDRAC">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Configuration de l'Agrégation</h2>
+        <p>L'étape suivante a consisté à configurer l'agrégation des interfaces réseau pour assurer une meilleure connexion et redondance.</p>
+        <div class="images">
+            <img src="../assets/img/Agregation.png" alt="Configuration de l'agrégation">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Ouverture d'une Porte dans le DNS</h2>
+        <p>J'ai également ouvert une porte dans le DNS pour permettre l'accès aux services hébergés sur le serveur.</p>
+        <div class="images">
+            <img src="../assets/img/DNS.png" alt="Configuration DNS">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Transfert des VMs</h2>
+        <p>Enfin, ce serveur va transférer toutes les VMs, centralisant ainsi la gestion des machines virtuelles.</p>
+        <div class="images">
+            <img src="../assets/img/VM transfert.jpg" alt="Transfert de VMs">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Projet Serveur Linux. Tous droits réservés.</p>
+</footer>
+
+</body>
+
+</html>

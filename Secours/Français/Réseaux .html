@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Réseaux</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("E:/Portfolio/assets/img/Fond6.avif"); /* Link to your background image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center;
+            color: #ffffff;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+            z-index: 0; /* Place behind other content */
+        }
+
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-bottom: 4px solid #007acc;
+            position: relative;
+            z-index: 1; /* Bring header above the overlay */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+            padding: 20px;
+            position: relative; /* To place elements above overlay */
+            z-index: 1; /* Ensure container is above the overlay */
+        }
+
+        .back-link {
+            color: #007acc; /* Blue link color */
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #005bb5; /* Darker blue on hover */
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px; /* Space between icons */
+            margin-top: 30px; /* Space above icons */
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #007acc; /* Icon color */
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .icon:hover {
+            transform: scale(1.2); /* Slight zoom effect */
+            color: #005bb5; /* Darker blue on hover */
+        }
+
+        .fa-5x {
+            font-size: 3em; /* Practical icon size */
+            margin-bottom: 10px; /* Space between icon and text */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em; /* Smaller header on mobile */
+            }
+
+            .fa-5x {
+                font-size: 2.5em; /* Smaller icons on mobile */
+            }
+
+            .back-link {
+                font-size: 1em; /* Adjust back link size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div> <!-- Dark overlay for better contrast -->
+    <header>
+        <h1>Mes Réseaux</h1>
+    </header>
+    
+    <div class="container">
+        <p><a href="E:/Portfolio/Portfolio%20FR.html" class="back-link">&larr; Retour</a></p>
+        
+        <div class="icon-container">
+            <a href="https://www.instagram.com/flvsoo" target="_blank" class="icon">
+                <i class="fab fa-instagram fa-5x"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="https://www.linkedin.com/in/flavien-soubeyrand-914552253/" target="_blank" class="icon">
+                <i class="fab fa-linkedin fa-5x"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://twitter.com/SoubeyrandFlav2/" target="_blank" class="icon">
+                <i class="fab fa-twitter fa-5x"></i>
+                <span>Twitter</span>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" class="icon">
+                <i class="fas fa-envelope fa-5x"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

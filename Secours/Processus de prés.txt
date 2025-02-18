@@ -1,0 +1,14 @@
+	
+	Présentation:
+
+Intro -> 1min
+Votre parcours ->2 min
+Vos compétences -> 2 min
+Vos projets (Stages/alternance) ->2 min
+Votre Veille-> 2 min
+Point N+1/N+2 -> 1min
+
+Questions/Réponses
+	-Developpez vos missions
+	-Expliquez le "code" du portfolio
+	-Mission:SISR,Ticketing,Priorisation,Incident,équipe,...

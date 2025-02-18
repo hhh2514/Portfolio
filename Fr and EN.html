@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌿🌿 Commencement🌿🌿</title>
+    <style>
+        :root {
+            --background-opacity: rgba(0, 0, 0, 0.7);
+            --hover-scale: 1.1;
+            --transition-speed: 0.4s;
+            --primary-color: #4a4a4a;
+            --secondary-color: #ffffff;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('./assets/img/Départ.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: overlay;
+            perspective: 1000px;
+        }
+
+        .square {
+            width: 280px;
+            height: 280px;
+            background-color: var(--background-opacity);
+            margin: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition:
+                transform var(--transition-speed) ease,
+                box-shadow var(--transition-speed) ease;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .square:hover {
+            transform: scale(var(--hover-scale)) rotateY(360deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .square:hover {
+            transition: transform 1s ease, box-shadow var(--transition-speed) ease; /* Durée de 1 seconde pour la rotation */
+        }
+
+        .square h2 {
+            color: var(--secondary-color);
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .square a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .square {
+                width: 200px;
+                height: 200px;
+            }
+
+            .square h2 {
+                font-size: 24px;
+            }
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square" style="background-image: url('./assets/img/DrapeauFR.png'); background-size: cover; background-position: center;">
+            <a href="Portfolio FR.html">
+                <h2>Français</h2>
+            </a>
+        </div>
+        <div class="square" style="background-image: url('./assets/img/drapeau-royaume-uni.jpg'); background-size: cover; background-position: center;">
+            <a href="Portfolio EN.html">
+                <h2>Anglais</h2>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
