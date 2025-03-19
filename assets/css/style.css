@@ -1945,7 +1945,7 @@ h3, p {
   border-radius: 2px;
   position: relative;
   padding-right: 10px;
-  left: -10px; /* Déplace le carré de 10 pixels vers la gauche */
+  left: -35px; /* Déplace le carré de 10 pixels vers la gauche */
 }
 
 .timeline > li > .timeline-panel:before {
