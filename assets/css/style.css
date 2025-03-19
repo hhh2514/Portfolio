@@ -52,7 +52,6 @@ html, body {
     background-position: 0% 50%;
   }
 }
-    <style>
 
 
           img {
@@ -127,7 +126,7 @@ html, body {
         .skill:hover .skill-fill {
             background: linear-gradient(90deg, #388e3c 0%, #76c7c0 100%); /* Dégradé plus sombre au survol */
         }
-    </style>
+
 
 /* 
  * Background colors 
@@ -153,10 +152,6 @@ html, body {
   transform: translate(-50%, -50%); /* Centrer l'image */
   object-fit: cover; /* Recadrage de l'image pour remplir le bloc */
 }
-
-
-
-
 
 
 /* 
