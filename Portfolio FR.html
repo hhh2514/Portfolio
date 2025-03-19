@@ -165,11 +165,64 @@
         </div><!-- /.container -->
     </section><!-- /.site-section -->
     <BR>
+        <div class="skills-container">
+            <h2>BTS SIO</h2>
+            <p>BTS SIO Option SISR</p>
+            <p>Compétences :</p>
+        
+            <div class="skill">
+                <span class="skill-name">Administration des systèmes</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 85%;"></div>
+                </div>
+                <span class="skill-percentage">85%</span>
+            </div>
+        
+            <div class="skill">
+                <span class="skill-name">Gestion des réseaux</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 80%;"></div>
+                </div>
+                <span class="skill-percentage">80%</span>
+            </div>
+        
+            <div class="skill">
+                <span class="skill-name">Sécurité informatique</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 65%;"></div>
+                </div>
+                <span class="skill-percentage">65%</span>
+            </div>
+        
+            <div class="skill">
+                <span class="skill-name">Support technique</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 90%;"></div>
+                </div>
+                <span class="skill-percentage">90%</span>
+            </div>
+        </div>
+        
+        <script>
+            // Fonction pour mettre à jour les barres de compétences
+            function updateSkills() {
+                const skills = document.querySelectorAll('.skill');
+                skills.forEach(skill => {
+                    const skillFill = skill.querySelector('.skill-fill');
+                    const skillPercentage = skill.querySelector('.skill-percentage');
+        
+                    // Récupérer le pourcentage à partir de la largeur
+                    const width = skillFill.style.width; // E.g., "85%"
+                    const percentage = width.replace('%', ''); // Supprimer le '%'
+                    
+                    skillPercentage.textContent = percentage + '%'; // Met à jour le pourcentage affiché
+                });
+            }
+        
+            // Appel de la fonction pour mettre à jour les compétences au chargement de la page
+            window.onload = updateSkills;
+        </script>
         <div style="border: 2px solid #007BFF; padding: 20px; border-radius: 10px; font-family: Arial, sans-serif; color: #333;">
-            <h2 style="color: #007BFF; text-align: center;">À propos de moi</h2>
-            <p style="font-size: 16px;">
-                Bonjour ! Je m'appelle Flavien Soubeyrand et j'ai 20 ans.
-            </p>
             <p style="font-size: 16px;">
                 <!-- History section -->
 <section class="section-history" id="history">
@@ -269,70 +322,7 @@
     </br>
 </section><!-- /.section-hello -->
         <!-- End Hello section -->
-        <section class="site-section section-bts">
-
-            <div class="skills-container">
-                <h2>BTS SIO</h2>
-                <p>BTS SIO Option SISR</p>
-                <p>Compétences :</p>
-            
-                <div class="skill">
-                    <span class="skill-name">Administration des systèmes</span>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 85%;"></div>
-                    </div>
-                    <span class="skill-percentage">85%</span>
-                </div>
-            
-                <div class="skill">
-                    <span class="skill-name">Gestion des réseaux</span>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 80%;"></div>
-                    </div>
-                    <span class="skill-percentage">80%</span>
-                </div>
-            
-                <div class="skill">
-                    <span class="skill-name">Sécurité informatique</span>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 65%;"></div>
-                    </div>
-                    <span class="skill-percentage">65%</span>
-                </div>
-            
-                <div class="skill">
-                    <span class="skill-name">Support technique</span>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 90%;"></div>
-                    </div>
-                    <span class="skill-percentage">90%</span>
-                </div>
-            </div>
-            
-            <script>
-                // Fonction pour mettre à jour les barres de compétences
-                function updateSkills() {
-                    const skills = document.querySelectorAll('.skill');
-                    skills.forEach(skill => {
-                        const skillFill = skill.querySelector('.skill-fill');
-                        const skillPercentage = skill.querySelector('.skill-percentage');
-            
-                        // Récupérer le pourcentage à partir de la largeur
-                        const width = skillFill.style.width; // E.g., "85%"
-                        const percentage = width.replace('%', ''); // Supprimer le '%'
-                        
-                        skillPercentage.textContent = percentage + '%'; // Met à jour le pourcentage affiché
-                    });
-                }
-            
-                // Appel de la fonction pour mettre à jour les compétences au chargement de la page
-                window.onload = updateSkills;
-            </script>
-        
-
-
-
-        
+        <section class="site-section section-bts"> 
         <!-- Counters section -->
         </section><!-- /.section-counters -->
         <!-- End Counters section -->
